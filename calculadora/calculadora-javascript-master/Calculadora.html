@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <!-- Adicione aqui seus scripts para testar -->
+    <script src="func.js" defer></script>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="resultado" value=""/></input>
+
+        <button class="numero" onclick = "exibir(9)">9</button>
+        <button class="numero" onclick = "exibir(8)">8</button>
+        <button class="numero" onclick = "exibir(7)">7</button>
+        <button class="operacao somar" onclick = "verifica_exibe('+')">+</button>
+        
+        <button class="numero" onclick = "exibir(6)">6</button>
+        <button class="numero" onclick = "exibir(5)">5</button>
+        <button class="numero" onclick = "exibir(4)">4</button>
+        <button class="operacao subtrair" onclick = "verifica_exibe('-')">-</button>
+        
+        <button class="numero" onclick = "exibir(3)">3</button>
+        <button class="numero" onclick = "exibir(2)">2</button>
+        <button class="numero" onclick = "exibir(1)">1</button>
+        <button class="operacao multiplicar" onclick = "verifica_exibe('*')">*</button>
+        
+        <button class="numero" onclick = "exibir(0)">0</button>
+        <button class="numero" onclick = "exibir('.')">.</button>
+        <button class="resultar" onclick="igual()">=</button>
+        <button class="operacao dividir" onclick = "verifica_exibe('/')">/</button>
+    </div>
+</body>
+</html>

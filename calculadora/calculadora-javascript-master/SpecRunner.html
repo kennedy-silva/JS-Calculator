@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v3.2.1</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.2.1/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-3.2.1/jasmine.css">
+
+  <script src="lib/jasmine-3.2.1/jasmine.js"></script>
+  <script src="lib/jasmine-3.2.1/jasmine-html.js"></script>
+  <script src="lib/jasmine-3.2.1/boot.js"></script>
+  <script src="lib/jquery.slim.js"></script>
+
+  <!-- Adicione aqui seus scripts para testar -->
+  <script src="func.js" defer></script>
+  <!-- Adicione acima os scripts -->
+
+  <script src="spec/OperacaoSpec.js"></script>
+
+</head>
+
+<body>
+    <div class="calculadora" style="display: none;">
+      <input type="text" id="resultado" value=" "/></input>
+
+        <button class="numero" onclick = "exibir(9)">9</button>
+        <button class="numero" onclick = "exibir(8)">8</button>
+        <button class="numero" onclick = "exibir(7)">7</button>
+        <button class="operacao somar" onclick = "verifica_exibe('+')">+</button>
+        
+        <button class="numero" onclick = "exibir(6)">6</button>
+        <button class="numero" onclick = "exibir(5)">5</button>
+        <button class="numero" onclick = "exibir(4)">4</button>
+        <button class="operacao subtrair" onclick = "verifica_exibe('-')">-</button>
+        
+        <button class="numero" onclick = "exibir(3)">3</button>
+        <button class="numero" onclick = "exibir(2)">2</button>
+        <button class="numero" onclick = "exibir(1)">1</button>
+        <button class="operacao multiplicar" onclick = "verifica_exibe('*')">*</button>
+        
+        <button class="numero" onclick = "exibir(0)">0</button>
+        <button class="numero" onclick = "exibir('.')">.</button>
+        <button class="resultar" onclick="igual()">=</button>
+        <button class="operacao dividir" onclick = "verifica_exibe('/')">/</button>
+    </div>
+
+</body>
+</html>
