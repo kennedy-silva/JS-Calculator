@@ -1,2 +1,2 @@
 # JS-Calculator
-Calculadora simples programada em JavaScript
+Calculadora programada em JavaScript
